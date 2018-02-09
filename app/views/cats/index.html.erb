@@ -1,0 +1,7 @@
+<h1>Welcome to CATalog!</h1>
+<p><%= link_to 'Make a new cat!', new_cat_path %> </p>
+<ol>
+<% @cats.each do |cat| %>
+  <li><%= link_to cat.name, cat_path(cat)%></li>
+<% end %>
+</ol>

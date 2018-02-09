@@ -1,0 +1,10 @@
+<h1><%= @cat.name %></h1>
+
+<h2>Breed: <%= @cat.breed %></h2>
+<ul>
+  <li><%= link_to "Edit", edit_cat_path %></li>
+  <li><%= link_to 'Delete', cat_path,
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></li>
+</ul>
+<%= link_to "All Cats", cats_path %>
